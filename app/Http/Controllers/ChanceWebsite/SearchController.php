@@ -28,7 +28,7 @@ class SearchController extends Controller
         $materials = Material::with('subject.department', 'subject.category', 'subject.professor')
             ->paginate($perPage);
 
-        return view('ChanceWebsite.pages.Search.Search', compact('categories', 'departments', 'professors', 'materials'));
+        return view('Website.pages.Search.Search', compact('categories', 'departments', 'professors', 'materials'));
     }
 
     // // Filter by ID
@@ -76,7 +76,7 @@ class SearchController extends Controller
         // Get the count of available results
         $count = $materials->total();
 
-        return view('ChanceWebsite.pages.Search.Search_Result', compact(
+        return view('Website.pages.Search.Search_Result', compact(
             'materials',
             'categories',
             'departments',
@@ -112,7 +112,7 @@ class SearchController extends Controller
         $departments = Department::all();
         $professors = Professor::all();
 
-        return view('ChanceWebsite.pages.Search.Search_Result', compact('materials', 'count', 'categories', 'departments', 'professors'));
+        return view('Website.pages.Search.Search_Result', compact('materials', 'count', 'categories', 'departments', 'professors'));
     }
 
     // // The search_result_All function
@@ -135,7 +135,7 @@ class SearchController extends Controller
             $professors = Professor::all();
             // You may fetch other related data here as needed
 
-            return view('ChanceWebsite.pages.Search.Search_Result', compact(
+            return view('Website.pages.Search.Search_Result', compact(
                 'materials',
                 'categories',
                 'departments',

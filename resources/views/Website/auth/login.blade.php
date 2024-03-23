@@ -1,4 +1,4 @@
-@extends('ChanceWebsite.layout.layout')
+@extends('Website.layout.layout')
 
 <!-- login-style -->
 <link rel="stylesheet" href="{{ asset('assets-login/login_page.min.css') }}">

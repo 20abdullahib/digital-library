@@ -1,9 +1,9 @@
-@extends('ChanceWebsite.layout.layout')
+@extends('Website.layout.layout')
 
 @section('main-sec')
     <!-- Header-background-markup -->
     <div class="overlay-bg relative">
-        <img src="{{asset('assets-chance-website/images/slide/silder-1 (2).jpeg')}}" alt="">
+        <img src="{{asset('')}}" alt="">
     </div>
     <!-- Header-jumbotron -->
     <div class="space-100"></div>
@@ -29,11 +29,16 @@
     <!-- Header-jumbotron-end -->
 @endsection
 
+
+
 @section('content')
     <section>
+
+
         <div class="space-80"></div>
         <div class="container">
             <div class="row"> <!-- Parent row -->
+
                 <!-- Sidebar -->
                 <div class="col-xs-12 col-md-2">
                     <aside id="droplist">
@@ -117,7 +122,7 @@
                     <form action="{{ route('search.result') }}" method="POST">
                         @csrf
                         <div class="input-group">
-                            <input type="text" name="query" class="form-control"
+                            <input type="text" name="query" class="form-control" value="{{ old('query', '') }}"
                                 placeholder="Enter what you are looking for">
                             <div class="input-group-btn">
                                 <button type="submit" class="btn btn-primary"><i
@@ -127,16 +132,17 @@
                     </form>
                     <div class="space-30"></div>
                     {{-- reselt number --}}
-                    {{-- <p id="reselt_number">
-                        Total Results: {{ $count }}</p> --}}
+                    <p id="reselt_number">
+                        Total Results: {{ $count }}</p>
                     {{-- end reselt number --}}
+
                     <div class="space-30"></div>
                     <hr>
                     <div class="space-20"></div>
 
                     <!-- Content including the loop -->
                     <div style="display: flex;flex-wrap: wrap;">
-                        @foreach ($materials as $material)
+                        @forelse ($materials as $material)
                             <div class="col-xs-12 col-md-4 filter-items" id="display_content" data-Allcategory="Allcategory"
                                 data-Alldepartment="Alldepartment" data-Allprofessor="Allprofessor"
                                 data-department="{{ $material->subject->department->department_name }}"
@@ -176,16 +182,23 @@
                                     </div>
                                 </div>
                             </div>
-                        @endforeach
+                        @empty
+                            <div class="alert alert-danger" role="alert">
+                                No results found.
+                            </div>
+                        @endforelse
                     </div>
-                    <!-- End loop -->
+
                     @include('ChanceWebsite.include.pagination')
+                    <!-- End loop -->
+
                     <div id="file-popup" class="file-popup">
                         <iframe id="file-viewer" class="file-viewer" name="file-viewer"></iframe>
                         <button id="close-button" class="close-button">Close</button>
                     </div>
 
                     <!--end content-->
+
                     <div class="space-60"></div>
                 </div>
             </div> <!-- End parent row -->

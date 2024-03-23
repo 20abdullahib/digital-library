@@ -72,6 +72,6 @@ class RegisterController extends Controller
     }
      public function showRegistrationForm()
     {
-        return view('ChanceWebsite.auth.login');
+        return view('Website.auth.login');
     }
 }

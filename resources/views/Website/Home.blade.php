@@ -1,20 +1,20 @@
-@extends('ChanceWebsite.layout.layout')
+@extends('Website.layout.layout')
 
 @section('Header-background')
     <!-- Header-background-markup -->
     <div class="header-bg relative home-slide">
         <!-- Placeholder images go here -->
         <div class="item">
-            <img src="{{asset('assets-chance-website/images/slide/silder-1 (1).jpeg')}}" alt="">
+            <img src="{{asset("")}}" alt="">
         </div>
         <div class="item">
-            <img src="{{asset('assets-chance-website/images/slide/silder-1 (2).jpeg')}}" alt="">
+            <img src="{{asset("")}}" alt="">
         </div>
         <div class="item">
-            <img src="{{asset('assets-chance-website/images/slide/silder-1 (1).jpeg')}}" alt="">
+            <img src="{{asset("")}}" alt="">
         </div>
         <div class="item">
-            <img src="{{asset('assets-chance-website/images/slide/silder-1 (3).jpeg')}}" alt="">
+            <img src="{{asset("")}}" alt="">
         </div>
     </div>
 @endsection

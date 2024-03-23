@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-    @include('ChanceWebsite.include.head')
+    @include('Website.include.head')
 </head>
 
 <body>
-    @include('ChanceWebsite.include.loader')
+    @include('Website.include.loader')
     <section id="content">
         <header class="relative" id="sc1">
             @yield('Header-background')
-            @include('ChanceWebsite.include.nav')
+            @include('Website.include.nav')
             @yield('main-sec')
         </header>
         <section>
             @yield('content')
         </section>
-        @include('ChanceWebsite.include.footer')
-        @include('ChanceWebsite.include.js_scripte')
+        @include('Website.include.footer')
+        @include('Website.include.js_scripte')
     </section>
 </body>
 

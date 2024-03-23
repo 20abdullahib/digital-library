@@ -12,7 +12,7 @@ class LoginController extends Controller
 {
     public function login()
     {
-        return view('ChanceWebsite.auth.login');
+        return view('Website.auth.login');
     }
     // public function checklogin(LoginRequest $request)
     // {

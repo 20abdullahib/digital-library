@@ -25,7 +25,7 @@ class HomePageController extends Controller
         $query = $request->input('query');
 
         // Render the 'structure.Home' view and pass data to it
-        return view('ChanceWebsite.Home', compact("departments", 'query'));
+        return view('Website.Home', compact("departments", 'query'));
     }
 
     /**

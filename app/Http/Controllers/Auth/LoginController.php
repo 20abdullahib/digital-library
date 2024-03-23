@@ -40,6 +40,6 @@ class LoginController extends Controller
     
      public function showLoginForm()
     {
-        return view('ChanceWebsite.auth.login');
+        return view('Website.auth.login');
     }
 }

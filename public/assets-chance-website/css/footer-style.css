@@ -163,9 +163,12 @@ color: blue;
     opacity: 1;
 }
 
-#customModal .modal-content h4,h2,li{
-    color: white;
+#customModal .modal-content {
+    h4, h2, li {
+        color: white;
+    }
 }
+
 
 /* Styles for the team list in the modal */
 #customModal .content ul {
