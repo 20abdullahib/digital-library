@@ -1,0 +1,209 @@
+#footer-style {
+    position: relative;
+    margin-top: 5em;
+}
+
+#footer-style .developer {
+    background-color: #242424;
+    position: absolute;
+    top: -3.2em;
+    left: 8em;
+    padding: 1em;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+#footer-style .icofont {
+    margin-right: 0.5em;
+    margin-bottom: 0.6em;
+}
+
+@media (min-width: 768px) {
+    #footer-style .developer {
+        left: 2em;
+    }
+}
+@media (min-width: 992px) {
+    #footer-style .developer {
+        left: 4em;
+    }
+}
+@media (min-width: 1200px) {
+    #footer-style .developer {
+        left: 8em;
+    }
+}
+
+
+#reselt_number{
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* ====================================== */
+                /* footer team */
+/* ====================================== */
+
+/* Styles for the custom modal */
+
+
+.text-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+
+}
+.text-button:hover {
+color: blue;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:  rgb(83, 84, 90, 1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 40em;
+    min-width: 35em;
+
+     /* Styling the scrollbar */
+     /* scrollbar-width: thin; For Firefox */
+     /* scrollbar-color: darkgray lightgray; For Firefox */
+ 
+     /* For Webkit (Chrome, Safari, Edge) */
+     /* overflow-y: scroll; */
+}
+#customModal .content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#customModal .content::-webkit-scrollbar {
+	width: 12px;
+	background-color: transparent;
+    border-radius: 20%;
+}
+
+#customModal .content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #444242;
+}
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    #customModal .modal-content{
+        min-width: 36em;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    #customModal .modal-content{
+        min-width: 26em;
+    }
+    #footer-style .developer{
+        left: 0em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #customModal .modal-content{
+        min-width: 32em;
+    }
+
+}
+
+#customModal .content{
+    margin-top: 1em;
+    min-height: auto;
+    max-height: 25em;
+    overflow-y: scroll;
+    padding-right: 1em;
+}
+#customModal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+
+    float: right;
+    font-size: 21px;
+    /* font-weight: 700; */
+    /* line-height: 1; */
+    color: #ffffff;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1;
+}
+
+#customModal .modal-content h4,h2,li{
+    color: white;
+}
+
+/* Styles for the team list in the modal */
+#customModal .content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#customModal ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#customModal ul li a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+#customModal ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue; /* Set the color of the underline */
+    visibility: hidden;
+    transform: scaleX(0); /* Initially set the width to zero */
+    transition: transform 0.3s ease, visibility 0.3s ease; /* Add transitions for transform and visibility */
+}
+
+#customModal ul li a:hover {
+    color: blue;
+}
+
+#customModal ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1); /* Increase the width to create an underline effect */
+}
+
