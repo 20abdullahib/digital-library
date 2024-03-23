@@ -189,7 +189,7 @@
                         @endforelse
                     </div>
 
-                    @include('ChanceWebsite.include.pagination')
+                    @include('website.include.pagination')
                     <!-- End loop -->
 
                     <div id="file-popup" class="file-popup">

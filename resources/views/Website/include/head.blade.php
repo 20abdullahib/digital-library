@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- loader --}}
 
-    <link rel="stylesheet"  href="{{ asset('assets-chance-website/css/loader.css') }}">
+    <link rel="stylesheet"  href="{{ asset('assets-website/css/loader.css') }}">
 
 
 
@@ -17,32 +17,32 @@
     <link rel="shortcut icon" type="ico" href="{{ asset("public-images\Magic-logo.png") }}">
 
     <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/icofont.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/cardslider.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/responsiveslides.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/icofont.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/cardslider.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/responsiveslides.css') }}">
 
     <!-- Main-Stylesheets -->
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/normalize.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/overright.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/theme.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/responsive.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/style.css') }}">
-    {{-- <link rel="stylesheet"  href="{{ asset('assets-chance-website/css/loader.css') }}">
-    <link rel="preload" href="{{ asset('assets-chance-website/css/loader.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> --}}
+    <link rel="stylesheet" href="{{ asset('assets-website/css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/overright.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/style.css') }}">
+    {{-- <link rel="stylesheet"  href="{{ asset('assets-website/css/loader.css') }}">
+    <link rel="preload" href="{{ asset('assets-website/css/loader.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> --}}
 
 
     <!-- libraryes  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.9.3/viewer.min.css">
     <!-- priview-style  -->
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/priviewStyle.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/priviewStyle.css') }}">
     <!-- dropmenu-style  -->
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/dropmenu.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/dropmenu.css') }}">
     <!-- footer-style -->
-    <link rel="stylesheet" href="{{ asset('assets-chance-website/css/footer-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets-website/css/footer-style.css') }}">
     <!-- login-style -->
     {{-- <link rel="stylesheet" href="{{ asset('assets-login/login_page.min.css') }}"> --}}
 
@@ -54,9 +54,9 @@
     <!-- dashboard-style -->
 
     {{-- <!----css---->
-    <link rel="stylesheet" href="{{asset('assets-chance-website-dashboard/css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets-chance-website-dashboard/css/custom.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets-chance-website-dashboard/css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets-website-dashboard/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets-website-dashboard/css/custom.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets-website-dashboard/css/style.css')}}" />
     <!-- SLIDER  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -3,7 +3,7 @@
 @section('main-sec')
     <!-- Header-background-markup -->
     <div class="overlay-bg relative">
-        <img src="{{asset('')}}" alt="">
+        <img src="{{ asset('') }}" alt="">
     </div>
     <!-- Header-jumbotron -->
     <div class="space-100"></div>
@@ -179,7 +179,7 @@
                         @endforeach
                     </div>
                     <!-- End loop -->
-                    @include('ChanceWebsite.include.pagination')
+                    @include('website.include.pagination')
                     <div id="file-popup" class="file-popup">
                         <iframe id="file-viewer" class="file-viewer" name="file-viewer"></iframe>
                         <button id="close-button" class="close-button">Close</button>
