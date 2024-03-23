@@ -2,14 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
 *,
 ::after,
 ::before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
     -webkit-transition: all 0.5s ease-in-out 0s;
@@ -19,10 +17,6 @@ a {
 a:hover {
     text-decoration: none;
 }
-
-/*-----------------------------
-	News Ticker
-------------------------------*/
 .acme-news-ticker {
     background: #fff;
     position: relative;
@@ -30,7 +24,6 @@ a:hover {
     border: 1px solid #1974d2;
     margin-top: 45px;
 }
-
 @media (min-width: 768px) {
     .acme-news-ticker {
         margin-top: 0;
@@ -132,29 +125,30 @@ a:hover {
     left: 50%;
     top: 50%;
 }
-.acme-news-ticker-controls.acme-news-ticker-horizontal-controls button.acme-news-ticker-prev:after {
+.acme-news-ticker-controls.acme-news-ticker-horizontal-controls
+    button.acme-news-ticker-prev:after {
     -webkit-transform: translate(-50%, -50%) rotate(135deg);
     -ms-transform: translate(-50%, -50%) rotate(135deg);
     transform: translate(-50%, -50%) rotate(135deg);
 }
-.acme-news-ticker-controls.acme-news-ticker-horizontal-controls button.acme-news-ticker-next:after {
+.acme-news-ticker-controls.acme-news-ticker-horizontal-controls
+    button.acme-news-ticker-next:after {
     -webkit-transform: translate(-50%, -50%) rotate(315deg);
     -ms-transform: translate(-50%, -50%) rotate(315deg);
     transform: translate(-50%, -50%) rotate(315deg);
 }
-.acme-news-ticker-controls.acme-news-ticker-vertical-controls button.acme-news-ticker-prev:after {
+.acme-news-ticker-controls.acme-news-ticker-vertical-controls
+    button.acme-news-ticker-prev:after {
     -webkit-transform: translate(-50%, -50%) rotate(225deg);
     -ms-transform: translate(-50%, -50%) rotate(225deg);
     transform: translate(-50%, -50%) rotate(225deg);
 }
-.acme-news-ticker-controls.acme-news-ticker-vertical-controls button.acme-news-ticker-next:after {
+.acme-news-ticker-controls.acme-news-ticker-vertical-controls
+    button.acme-news-ticker-next:after {
     -webkit-transform: translate(-50%, -50%) rotate(405deg);
     -ms-transform: translate(-50%, -50%) rotate(405deg);
     transform: translate(-50%, -50%) rotate(405deg);
 }
-
-/*# sourceMappingURL=style.css.map */
-
 #reselt_number {
     background-color: #f4f4f4;
     padding: 10px;
@@ -165,8 +159,6 @@ a:hover {
     margin-bottom: 20px;
     color: #333;
 }
-
-/* Style the select element */
 .select-styled {
     display: block;
     width: 100%;
@@ -175,53 +167,40 @@ a:hover {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
-    appearance: none; /* Remove default appearance */
+    appearance: none;
 }
-
-/* Style the selected option */
 .select-styled option[disabled] {
     display: none;
 }
-
-/* Style the dropdown arrow */
 .select-styled::after {
-    content: "\25BC"; /* Unicode for a down arrow */
+    content: "\25BC";
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
     pointer-events: none;
 }
-
 .editable {
     cursor: pointer;
 }
 .editable input {
     display: none;
 }
-
 .table td {
-    text-align: center; /* Horizontal centering */
-    vertical-align: middle; /* Vertical centering */
+    text-align: center;
+    vertical-align: middle;
 }
-
-
-
 #materialContainer {
-  position: relative;
+    position: relative;
 }
-
 #addMaterialLink {
     padding: 5px 20px;
     margin-top: 15px;
     background-color: #fff;
     cursor: pointer;
 }
-
-
-
 #material_pdf td,
 #material_pdf th {
     text-align: center;
-    vertical-align: middle !important; 
+    vertical-align: middle !important;
 }

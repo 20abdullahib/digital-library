@@ -4,51 +4,23 @@
     padding: 0;
     font: inherit;
     cursor: pointer;
-    /* text-decoration: underline; */
 }
-
-/*
-#dispaly_content .text-primary {
-  color: #007bff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-#dispaly_content .download-button, .view-button {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  font-weight: bold;
-  gap: 5px;
-}
-
-#dispaly_content .download-button i, .view-button i {
-  font-size: 16px;
-} */
-
 #display_content .btn-outline-primary {
     min-width: 100px;
     background-color: transparent;
     border-color: #007bff !important;
     color: #007bff !important;
 }
-
 #display_content .btn-outline-primary:hover {
     min-width: 100px;
     background-color: #007bff !important;
     color: #fff !important;
 }
-
-/* Define a CSS class with the desired styles */
 #button-home {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: 100%;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     line-height: 1.6;
     text-align: center;
@@ -62,27 +34,20 @@
     display: inline-block;
     padding: 0.6em 1em;
 }
-
-
-/* ------------------------------------------------------ */
-
-
-.custom-dropdown-menu{
-     display: none;
-     position: absolute;
-     z-index: 999;
-     background-color: #fff;
-     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-     list-style: none;
-     padding: 14px 0 0 15px;
-     margin: 0;
-     width: max-content;
-     width: 17em;
-     min-width: max-content;
-     top: 33px;
+.custom-dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 14px 0 0 15px;
+    margin: 0;
+    width: max-content;
+    width: 17em;
+    min-width: max-content;
+    top: 33px;
 }
-
-.contaner-droplist{
-  position: relative;
+.contaner-droplist {
+    position: relative;
 }
-
