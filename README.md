@@ -12,7 +12,7 @@ Welcome to the Digital Library Project repository! This project is a digital lib
 
 ## Live Demo
 
-Check out the live demo of the Digital Library Project at [magicteam.live](https://magicteam.live/). Experience the features and functionality of the digital library system in action and explore its capabilities.
+Check out the live demo of the Digital Library Project at [Digital Library](https://magicteam.live/). Experience the features and functionality of the digital library system in action and explore its capabilities.
 
 ## Getting Started
 
