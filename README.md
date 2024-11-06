@@ -24,6 +24,12 @@ To get started with the Digital Library Project on your local machine, follow th
 4. **Generate Application Key**: Generate a new application key using the Artisan command: `php artisan key:generate`.
 5. **Run Migrations**: Run database migrations to create necessary tables in the database: `php artisan migrate`.
 6. **Serve the Application**: Start the Laravel development server: `php artisan serve`. The application will be accessible at `http://localhost:8000`.
+7. **Upload Main-database.sql**: Import the `Main-database.sql` file into your database to set up the initial data structure and content. This step ensures the application has the necessary tables and data to function correctly.
+
+   To upload `Main-database.sql`, use a database tool (like phpMyAdmin or MySQL CLI):
+   ```bash
+   mysql -u username -p database_name < /path/to/Main-database.sql
+
 
 ## Contributing
 
